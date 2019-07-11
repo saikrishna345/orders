@@ -1,0 +1,79 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+.container .mat-drawer  {
+      min-width: 250px;
+      background-color: silver ;
+      }
+
+.container .mat-drawer .mat-button {
+        display: block;
+        width: 100px;
+        text-align: center;  
+      }
+      
+ .spacer {
+     flex: 1 1 auto
+ }
+ /* html, body {
+  height: 100%;
+} */
+
+.bgimg {
+  display:block;
+  width: 1350px;
+  height: 700px;
+  background: url('../images/guitar.png');
+  background-repeat: no-repeat;
+  /* background-position: top; */
+  background-size: cover;
+  padding-left: px;
+}
+  
+ /* .main-bg-reg{
+  background-image: url('images/guitar.png');
+  background-repeat: no-repeat;
+  background-position: top;
+} */
+
+.text-danger{
+  color: red;
+}
+.example-card {
+  max-width: 400px;
+  /* padding-left: 500px; */
+}
+
+.mat-card{
+text-align:center;
+background: #fff;
+margin: 0px auto;
+width: 466px;
+padding: 30px 40px 30px 30px;
+position: relative;
+top: 100px;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+}
+
+.example-header-image {
+  background-image: url('../images/sai.jpg');
+  background-size: cover;
+}
+.card-image{
+  padding-left: 500px;
+}
+
+
+.text{
+  text-align: center
+}
+
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}

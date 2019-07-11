@@ -1,0 +1,31 @@
+<form [formGroup]="Orderformgroup" (ngSubmit)="Ordersupdate()">
+  <h1 mat-dialog-title> Edit Order</h1>
+  <mat-dialog-content>
+    <mat-form-field>
+      <input matInput formControlName="OrderNumber" placeholder="OrderNumber">
+    </mat-form-field> <br>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" formControlName="OrderDuedate" placeholder="OrderDuedate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+       <br>
+    <mat-form-field>
+        <input matInput formControlName="CustomerName" placeholder="CustomerName">
+    </mat-form-field> <br>
+    <mat-form-field>
+        <input matInput formControlName="CustomerAddress" placeholder="CustomerAddress">
+      </mat-form-field> <br>
+      <mat-form-field>
+          <input matInput formControlName="CustomerphoneNo" placeholder="CustomerphoneNo">
+        </mat-form-field> <br>
+
+        <mat-form-field>
+            <input matInput formControlName="OrderTotal" placeholder="OrderTotal">
+          </mat-form-field> <br>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-raised-button color ="primary" (click)="onNoClick()" type="submit">Save</button> &nbsp;
+    <button mat-raised-button color="warn" type="button" mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</form>

@@ -1,0 +1,49 @@
+{
+  "orders-list": [
+    {
+      "id": 1,
+      "OrderNumber": "101",
+      "OrderDuedate": "2019-07-09T18:30:00.000Z",
+      "CustomerName": "Saikrishna",
+      "CustomerAddress": "Borbanda,Hyderabad",
+      "CustomerphoneNo": "7386477003",
+      "OrderTotal": "2500"
+    },
+    {
+      "OrderNumber": "102",
+      "OrderDuedate": "2019-07-11T18:30:00.000Z",
+      "CustomerName": "Ajay",
+      "CustomerAddress": "banjarahills,Hyderabad",
+      "CustomerphoneNo": "9878978675",
+      "OrderTotal": "800",
+      "id": 2
+    },
+    {
+      "OrderNumber": "103",
+      "OrderDuedate": "2019-07-17T18:30:00.000Z",
+      "CustomerName": "Chandu",
+      "CustomerAddress": "gachibowli,Hyderabad",
+      "CustomerphoneNo": "9765765675",
+      "OrderTotal": "1200",
+      "id": 3
+    },
+    {
+      "OrderNumber": "104",
+      "OrderDuedate": "2019-07-14T18:30:00.000Z",
+      "CustomerName": "Raviteja",
+      "CustomerAddress": "Uppal,Hyderabad",
+      "CustomerphoneNo": "8668768762",
+      "OrderTotal": "2800",
+      "id": 4
+    },
+    {
+      "OrderNumber": "105",
+      "OrderDuedate": "2019-07-15T18:30:00.000Z",
+      "CustomerName": "Akhil",
+      "CustomerAddress": "Begumpet,Hyderabad",
+      "CustomerphoneNo": "7867576567",
+      "OrderTotal": "6500",
+      "id": 5
+    }
+  ]
+}

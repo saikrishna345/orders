@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav">
+     <p style="color:crimson; padding-left: 25px">DASHBOARD</p>
+     <hr style="color:indigo"/>
+    <mat-nav-list>
+      <span style="color:forestgreen; padding-left: 25px">User Info</span>
+    <a mat-list-item routerLink="/" (click)="drawer.toggle(); home();">
+      <mat-icon mat-list-icon>home</mat-icon>
+      <span mat-line>Home</span>
+    </a>
+    <a mat-list-item routerLink="/login">
+      <mat-icon mat-list-icon>exit_to_app</mat-icon>
+      <span mat-line>Logout</span>
+      <!-- <span mat-line class="secondary">Close the side navigation</span> --> 
+    </a>
+    <hr style="color: indigo"/>
+    </mat-nav-list>
+</mat-drawer>
+<div class="sidenav-content">
+    <mat-toolbar color="accent">
+      <mat-toolbar-row>
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon id="menu">menu</mat-icon>
+  </button>
+  <img routerLink="/" src="../assets/orders.png" width="100px;" height="60px" alt="sai" />
+   <span style="color:darkred">Order Management System</span>
+  </mat-toolbar-row>
+  </mat-toolbar>
+<div class="bgimg"> 
+  <router-outlet></router-outlet>   
+</div> 
+</div>
+</mat-drawer-container>

@@ -1,0 +1,42 @@
+<mat-card class="example-card">
+    <mat-card-content>
+    <form class="example-form" [formGroup]="loginformgrp" (ngSubmit)="loginUpdate()">
+     <h1 style="color:greenyellow ;text-align: center">Login</h1><br>
+     <hr style="color: lawngreen"/>
+          <div>
+            <mat-form-field class="example-full-width">
+              <div class="formGroup text">
+              <input matInput email type="email" name="email" placeholder="Email" formControlName="email">
+            </div>
+            </mat-form-field>
+<div class="text-danger" *ngIf="loginformgrp['controls'].email.invalid">
+<div *ngIf="loginformgrp['controls'].email.errors.required && submitted === true">Required</div>
+<div *ngIf= "loginformgrp['controls'].email.errors.email">Invalid!</div>
+</div>
+          </div>  <br>
+            <div>
+               <mat-form-field class="example-full-width">
+                <div class="formGroup text">
+              <input  type="password" name="password"  placeholder="Password"matInput formControlName="password">
+              </div>
+            </mat-form-field>
+            <div class="text-danger" *ngIf="loginformgrp['controls'].password.invalid">
+              <div *ngIf="loginformgrp['controls'].password.errors.required && submitted === true"> Required</div>
+              <!-- <div *ngIf="loginformgrp['controls'].password.errors && !loginformgrp['controls'].password.errors?.required">Invalid!</div> -->
+              <div *ngIf="loginformgrp['controls'].password.errors?.minlength || loginformgrp['controls'].password.errors?.maxlength">Please provide password between the range 8 -12 !</div>
+            </div>
+          </div>
+            <br>
+            <mat-checkbox formControlName="rememberme" (click)="checked($event)" > Remember me</mat-checkbox>
+            <div class="text-danger" *ngIf="loginformgrp['controls'].rememberme.invalid">
+            <div *ngIf="loginformgrp['controls'].rememberme.errors.required && submitted === true"> Required</div>
+            </div>
+            <br> <br>
+            <button type="submit" [disabled]="loginformgrp.invalid" mat-raised-button color="primary">Submit</button>
+             <br>
+             <br>
+             <span>Don't have an account? <a routerLink=''>Create an
+              account</a></span>
+  </form>
+    </mat-card-content>
+  </mat-card>

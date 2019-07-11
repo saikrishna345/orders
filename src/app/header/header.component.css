@@ -1,0 +1,56 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+.container .mat-drawer  {
+      min-width: 250px;
+      background-color: silver ;
+      }
+
+.container .mat-drawer .mat-button {
+        display: block;
+        width: 100px;
+        text-align: center;  
+      }
+      
+ .spacer {
+     flex: 1 1 auto
+ }
+ /* html, body {
+  height: 100%;
+} */
+
+.bgimg {
+  display:block;
+  width: 1350px;
+  height: 700px;
+  background-image: url('../images/orders.jpg');
+  background-repeat: no-repeat;
+  /* background-position: top; */
+  background-size: cover;
+  padding-left: px;
+}
+  
+ /* .main-bg-reg{
+  background-image: url('images/guitar.png');
+  background-repeat: no-repeat;
+  background-position: top;
+} */
+
+
+.example-card {
+  max-width: 400px;
+  /* padding-left: 500px; */
+}
+
+
+
+.text{
+  text-align: center
+}
+
+

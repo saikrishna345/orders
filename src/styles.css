@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body { }
+
+.background-red {
+    background-color: red;
+}
+
+.background-green {
+    background-color: green;
+}
+
+
+.custom-dialog-container .mat-dialog-container {
+    overflow-y: hidden;
+  }
+
+  .cdk-global-scrollblock {
+    position: static;
+    overflow: hidden !important;
+}
+
